@@ -1,6 +1,13 @@
-// DummyModel.swift
+//
+//  DummyState.swift
+//  Comiixx
+//
+//  Created by Pierluigi De Meo on 26/02/26.
+//
+
 import RealityKit
 import simd
+import Foundation
 
 struct DummyState: Identifiable {
     let id: UUID
@@ -15,8 +22,8 @@ struct DummyState: Identifiable {
     var rightArmRotation: SIMD3<Float> = .zero
     var headRotation: SIMD3<Float> = .zero
     var neckRotation: SIMD3<Float> = .zero
-    var leftLegRotation: SIMD3<Float> = .zero
-    var rightLegRotation: SIMD3<Float> = .zero
+    var leftLegRotation: SIMD3<Float> = SIMD3<Float>(180, 180, 0)
+    var rightLegRotation: SIMD3<Float> = SIMD3<Float>(180, 180, 0)
     var leftForearmRotation: SIMD3<Float> = .zero
     var rightForearmRotation: SIMD3<Float> = .zero
     var leftKneeRotation: SIMD3<Float> = .zero
